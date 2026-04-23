@@ -696,21 +696,36 @@ width = 80vw
         font-size: 20px;
     }
     .modal {
-        height: 500px;
+        top: 55%;
+        height: auto;
+        flex-direction: column;
+    }
+    .modal__half {
+        width: 100%;
+        padding: 24px;
     }
     .modal__title {
         width: 100%;
-        font-size: 8px;
+        font-size: 16px;
     }
     .modal__sub-title {
-        font-size: 8px;
+        font-size: 14px;
     }
     .modal__para {
-        font-size: 8px;
+        font-size: 12px;
     }
-
-    .modal__half .modal__contact {
-        width: 50%;
+    .modal__contact {
+        width: 100%;
+    }
+    .modal__about {
+        width: 100%;
+    }
+    .modal__close {
+        position: fixed;
+        top: 20px;
+        right: 24px;
+        font-size: 28px;
+        z-index: 1000;
     }
     .section__title {
         font-size: 40px;
@@ -727,6 +742,8 @@ width = 80vw
     .project__description--para {
         font-size: 12px;
     }
+    .shape {
+            }
 }
 
 @media (max-width: 540px) {
