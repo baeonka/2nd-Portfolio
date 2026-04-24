@@ -841,6 +841,15 @@ width = 80vw
 }
 
 @media (min-width: 541px) and (max-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+    .header {
+        margin-top: 40px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
     .modal {
         top: 20px;
         left: 50%;
@@ -849,12 +858,48 @@ width = 80vw
         overflow-y: auto;
         padding-bottom: 0;
     }
+     .modal__half {
+        position: static;
+        width: 100%;
+        padding: 24px;
+    }
+     .modal__title {
+        width: 100%;
+        font-size: 16px;
+    }
+    .modal__sub-title {
+        font-size: 14px;
+    }
+    .modal__para {
+        font-size: 12px;
+    }
+    .modal__contact {
+        width: 100%;
+    }
+    .modal__about {
+        width: 100%;
+    }
+    .modal__about {
+        width: 100%;
+    }
+    textarea {
+        height: 50px;
+    }
+    .modal__close {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        color: #fff;
+        z-index: 9999;
+    }
     .modal__language {
         width: 50%;
         height: auto;
   }
 
     .modal__language--img {
+        width: 50px;
         height: auto;
   }
   
