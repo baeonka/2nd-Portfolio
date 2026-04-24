@@ -130,9 +130,16 @@ input:focus, textarea:focus {
 nav,
 .scroll,
 .header {
+    position: relative;
+    z-index: 1;
     opacity: 1;
     visibility: visible;
     transition: all 600ms 800ms;
+}
+
+.mail__btn {
+    position: relative;
+    z-index: 1;
 }
 
 .modal--open nav,
@@ -181,6 +188,8 @@ LANDING PAGE
 */
 
 #landing-page {
+    position: relative;
+    overflow: hidden;
     min-height: 100vh;
 }
 
@@ -637,7 +646,8 @@ width = 80vw
 */
 
 .shape {
-    position: fixed;
+    position: absolute;
+    z-index: 0;
 }
 
 .shape--0 {
@@ -699,8 +709,10 @@ width = 80vw
         top: 55%;
         height: auto;
         flex-direction: column;
+        padding-bottom: 40px;
     }
     .modal__half {
+        position: static;
         width: 100%;
         padding: 24px;
     }
@@ -722,10 +734,17 @@ width = 80vw
     }
     .modal__close {
         position: fixed;
-        top: 20px;
-        right: 24px;
+        top: -266px;
+        right: 16px;
         font-size: 28px;
-        z-index: 1000;
+        color: #242424;
+        z-index: 9999;
+    }
+    textarea {
+        height: 50px;
+    }
+    .form__submit {
+        height: auto;
     }
     .section__title {
         font-size: 40px;
@@ -753,6 +772,54 @@ width = 80vw
     .header__para {
         font-size: 20px;
     }
+    .modal {
+        top: 55%;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .modal__half {
+        position: static;
+        width: 100%;
+        padding: 24px;
+    }
+    .modal__title {
+        width: 100%;
+        font-size: 16px;
+    }
+    .modal__sub-title {
+        font-size: 14px;
+    }
+    .modal__para {
+        font-size: 12px;
+    }
+    .modal__language--img {
+        width: 50px;
+        height: auto;
+    }
+    .modal__contact {
+        width: 100%;
+    }
+    .modal__about {
+        width: 100%;
+    }
+    .modal__about {
+        width: 100%;
+    }
+    .modal__close {
+        position: fixed;
+        top: -280px;
+        right: 16px;
+        font-size: 28px;
+        color: #242424;
+        z-index: 9999;
+    }
+    textarea {
+        height: 50px;
+    }
+    .form__submit {
+        height: auto;
+    }
     .section__title {
         font-size: 40px;
     }
@@ -768,4 +835,10 @@ width = 80vw
     .project__description--para {
         font-size: 12px;
 }
+}
+
+@media (max-width: 768px) {
+    .modal__language {
+        width: 50%;
+    }
 }
